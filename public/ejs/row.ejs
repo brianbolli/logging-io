@@ -1,0 +1,19 @@
+<tr 
+	class="log-entry"
+	data-client="<%= client %>"
+	data-instance="<%= instance %>"
+	data-language="<%= language %>" 
+	data-type="<%= type %>" 
+	data-userid="<%= user_id %>" 
+	data-data="<% (data) ? true : false %>">
+	<td><input type="checkbox" name="delete_me[]" value="" /></td>
+    <td><%= client %></td>
+    <td><%= instance %></td>
+    <td class="timestamp"><%= timestamp %></td>
+    <td><%= language %></td>
+    <td><%= type %></td>
+    <td><%= source %></td>
+    <td><%= user_id %></td>
+    <td><%= msg %></td>
+    <td class="data"><%= data %></td>
+</tr>

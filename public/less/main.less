@@ -1,0 +1,122 @@
+@import "../libs/bootstrap/less/bootstrap.less";
+
+@import "variables.less";
+@import "fonts.less";
+@import "table.less";
+@import "main.less";
+
+@navbar-border-radius: 0;
+
+nav.navbar.navbar-inverse {
+
+	& .navbar-brand {
+    
+		padding: 5px;
+   
+	}
+	
+	& img {
+
+		height: 40px;
+		width: auto;
+	}
+	
+	& .user-container {
+		
+		display: inline-block;
+		height: 40px;
+		list-style: none;
+		margin-right: 20px;
+		
+		& li {
+			display: inline-block;
+			float: left;
+			height: 40px;
+			
+		}
+		
+		& > span {
+			display: inline-block;
+			height: 40px;
+			line-height: 40px;
+			font-size: 18px;
+			color: #ccc;
+			font-weight: 700;
+		}
+		
+		& .image-frame {
+
+			height: 40px;
+			width: 40px;
+			overflow: hidden;
+			border-radius: 3px;
+			border: 1px solid #333;
+
+			& img {
+				height: 40px;
+				width: auto;
+			}
+
+		}
+
+		& a {
+			
+			& .glyphicon {
+				margin-right: 6px;
+			}
+		}
+	}
+	
+	& > .container-fluid {
+		
+		& > .navbar-form {
+			display: inline-block;
+		}
+	}
+	
+	& form.navbar-form {
+		display: inline-block;
+		margin-top: 8px;
+		margin-bottom: 8px;
+		border: none;
+	}
+	
+	& ul.nav.navbar-nav.navbar-left {
+		
+		& li {
+			
+			& ul.dropdown-menu {
+				
+				padding: 0;
+				
+				& li {
+					
+					border-top: 1px #ccc solid;
+					border-bottom: 1px #666 solid;
+					padding: 0 10px;
+					background: #e5e5e5;
+					background: -moz-linear-gradient(top,  #e5e5e5 0%, #cccccc 100%);
+					background: -webkit-linear-gradient(top,  #e5e5e5 0%,#cccccc 100%);
+					background: linear-gradient(to bottom,  #e5e5e5 0%,#cccccc 100%);
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#cccccc',GradientType=0 );
+					color: #333;
+					
+					& div {
+						
+						& label {
+							margin-bottom: 0;
+							width: 100%;
+							line-height: 40px;
+							
+							& input {
+								margin-top: 0;
+								margin-right: 5px;
+							}
+						}
+					}
+				}
+				
+			}
+		}
+	}
+}

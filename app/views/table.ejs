@@ -1,0 +1,30 @@
+<table id="log-table" class="table table-striped">
+	<thead>
+		<tr>
+			<th>&nbsp;</th>
+			<% for (var i = 0; i < columns.length; i++) { %>
+				<% if (columns[i].class) { %>
+					<th class="<%- columns[i].class %>"><%- columns[i].header %></th>
+				<% } else { %>
+					<th><%- columns[i].header %></th>
+				<% } %>
+			<% } %>
+		</tr>
+	</thead>
+	<tbody>
+		<% if (logs) { %>
+
+			<% include tbody %>
+
+		<% } else { %>
+
+			<% include alert %>
+
+		<% } %>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="<%- columns.length + 1 %>">&nbsp</td>
+		</tr>
+	</tfoot>
+</table>

@@ -1,0 +1,15 @@
+<% for (var i = 0; i < logs.length; i++) { %>
+    <tr class='log-entry' data-client='<%= rows[i].client %>' data-instance='<%= rows[i].instance %>
+		data-language='<%= rows[i].language %>' data-type='<%= rows[i].type %>' data-userid='<%= rows[i].user_id %>' data-data='<% (rows[i].data) ? true : false %>'>
+			<td><input type='checkbox' name='delete_me[]' value='' /></td>
+			<td><%= rows[i].client %></td>
+			<td><%= rows[i].instance %></td>
+			<td class='timestamp'><%= rows[i].timestamp %></td>
+			<td><%= rows[i].language %></td>
+			<td><%= rows[i].type %></td>
+			<td><%= rows[i].source %></td>
+			<td><%= rows[i].user_id %></td>
+			<td><%= rows[i].msg %></td>
+			<td class='data'><%= rows[i].data %></td>
+    </tr>
+<% } %>

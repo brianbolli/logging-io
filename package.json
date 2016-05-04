@@ -1,0 +1,52 @@
+{
+  "name": "logging-io",
+  "version": "0.0.1",
+  "author": "Binary Pursuits <bbolli@binarypursuits.com>",
+  "description": "Custom Development Logging Platform",
+  "contributors": {
+    "name": "Brian Bolli",
+    "email": "brian.bolli@arctg.com"
+  },
+  "main": "./app.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:binarypursuits/logging-io.git"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "azure": "^0.10.6",
+    "body-parser": "^1.13.3",
+    "compression": "^1.5.2",
+    "connect-redis": "^3.0.2",
+    "cookie-parser": "^1.3.3",
+    "ejs": "^2.3.1",
+    "express": "^4.13.3",
+    "express-session": "^1.13.0",
+    "express-socket.io-session": "^1.3.1",
+    "glob": "^5.0.3",
+    "http": "0.0.0",
+    "method-override": "^2.3.0",
+    "passport": "^0.3.2",
+    "passport-google-oauth": "^1.0.0",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.3.0",
+    "socket.io": "^1.4.5",
+    "socket.io-express-session": "^0.1.3",
+    "socket.io-redis": "^1.0.0",
+    "winston": "^2.2.0",
+    "winston-azuretable": "^1.0.4"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-develop": "^0.4.0",
+    "grunt-wiredep": "^2.0.0",
+    "load-grunt-tasks": "^3.2.0",
+    "request": "^2.60.0",
+    "time-grunt": "^1.2.1"
+  }
+}

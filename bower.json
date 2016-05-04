@@ -1,0 +1,13 @@
+{
+  "name": "logging-io",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "libs"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "WATable": "watable#^1.10.2"
+  }
+}

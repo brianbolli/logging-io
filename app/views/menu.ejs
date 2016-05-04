@@ -1,0 +1,74 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="/images/arc-logo.png" alt="Arc Technology Group" />
+            </a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-left">
+            <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Type <span class="caret"></span></a>
+                <ul id="type-filter"  class="dropdown-menu"></ul>
+            </li>
+            <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Client <span class="caret"></span></a>
+                <ul id="client-filter" class="dropdown-menu">
+                    
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Instance <span class="caret"></span></a>
+                <ul id="instance-filter"  class="dropdown-menu">
+                    
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language <span class="caret"></span></a>
+                <ul id="language-filter" class="dropdown-menu"></ul>                
+            </li>
+            <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Source <span class="caret"></span></a>
+                <ul id="source-filter"  class="dropdown-menu"></ul>
+            </li>
+            <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User <span class="caret"></span></a>
+                <ul id="user_id-filter"  class="dropdown-menu"></ul>
+            </li>
+        </ul>
+
+		<form class="navbar-form" role="search">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Search">
+			</div>
+		</form>
+
+		<ul class="user-container navbar-right">
+			<% if (user) { %>
+				<li>
+					<span>Welcome, <%- user.username %></span>
+				</li>
+				<li>
+					<div class="image-frame">
+						<img src="<%- user.avatar %>" alt="<%- user.given_name %>" />
+					</div>
+				</li>
+				<li>
+					<a href="/logout" class="btn btn-default navbar-btn"><span class="glyphicon glyphicon-log-out"></span>Logout</a>
+				</li>
+			<% } else { %>
+				<li>
+					<a href="/auth/google" class="btn btn-default navbar-btn"><span class="glyphicon glyphicon-log-in"></span>Login</a>
+				</li>
+			<% } %>
+		</ul>
+
+    </div>
+</nav>

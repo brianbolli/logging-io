@@ -1,0 +1,61 @@
+div.object-container {
+    display: inline-block;
+    width: 100%;
+}
+
+ul.object-tree {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.object-tree ul {
+    width: 58%;
+    float: right;
+    margin: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: #ccc;
+    border: 1px #0070a3 solid;
+}
+
+ul.object-tree li {
+    display: inline-block;
+    width: 100%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: #f3d8d8;
+    border: 1px #0070a3 solid;
+}
+
+
+ul.object-tree ul li {
+    border: none;
+    border-radius: none;
+    background: none;
+}
+
+ul.object-tree li span {
+    display: inline-block;
+    float: left;
+}
+
+ul.object-tree li span.object-property {
+    width: 35%;
+    margin: 4px 8px;
+}
+
+ul.object-tree > li span.property-value {
+    width: 60%;
+    background: #ccc;
+    padding: 4px 8px;
+    float: right;
+    border-left: 1px #0070a3 solid;
+}
+
+
+ul.object-tree ul li span {
+    background: none;
+}
