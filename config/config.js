@@ -13,7 +13,7 @@ var config = {
 			database: 0
 		},
 		root: rootPath,
-		secret: "cf864c72-5c90-4787-8e11-5d83a0b59668",
+		secret: process.env["ARC_LOGGING_SECRET"],
 		app: {
 			name: "logging-io"
 		}
@@ -29,7 +29,7 @@ var config = {
 		app: {
 			name: "logging-io"
 		},
-		secret: "cf864c72-5c90-4787-8e11-5d83a0b59668",
+		secret: process.env["ARC_LOGGING_SECRET"],
 		host: "http://arc-logging.azurewebsites.net",
 		google: {
 			token: process.env["ARC_LOGGING_GOOGLE_API_ACCESS_TOKEN"],
